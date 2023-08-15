@@ -1,13 +1,15 @@
-.name {
+import styled from 'styled-components';
+
+export const Label = styled.label`
   text-align: center;
   display: block;
   margin-bottom: 5px;
   font-size: 20px;
   color: #000;
   font-weight: bold;
-}
+`;
 
-.input {
+export const Input = styled.input`
   display: block;
   text-align: center;
   width: 200px;
@@ -17,4 +19,4 @@
   color: black;
   outline: none;
   border-radius: 10px;
-}
+`;

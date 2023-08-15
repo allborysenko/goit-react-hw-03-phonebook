@@ -1,6 +1,7 @@
 import { Component } from 'react';
-import css from './Contact.module.css';
+
 import PropTypes from 'prop-types';
+import { Label, Input, Button } from './Contact.styled';
 
 export class Contact extends Component {
   state = {
@@ -30,10 +31,9 @@ export class Contact extends Component {
 
     return (
       <form onSubmit={this.handleSubmit}>
-        <label className={css.title}>
+        <Label>
           Name
-          <input
-            className={css.input}
+          <Input
             type="text"
             name="name"
             pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
@@ -43,12 +43,11 @@ export class Contact extends Component {
             value={name}
             onChange={this.handleChange}
           />
-        </label>
+        </Label>
 
-        <label className={css.title}>
+        <Label>
           Number
-          <input
-            className={css.input}
+          <Input
             type="tel"
             name="number"
             pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
@@ -58,11 +57,9 @@ export class Contact extends Component {
             value={number}
             onChange={this.handleChange}
           />
-        </label>
+        </Label>
 
-        <button className={css.button} type="submit">
-          Add contact
-        </button>
+        <Button type="submit">Add contact</Button>
       </form>
     );
   }

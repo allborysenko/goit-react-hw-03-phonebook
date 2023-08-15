@@ -1,9 +1,11 @@
-.list {
+import styled from 'styled-components';
+
+export const Wrapper = styled.div`
   padding-left: 0px;
   list-style: none;
-}
+`;
 
-.item {
+export const List = styled.li`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,9 +13,8 @@
   list-style: none;
   color: #000;
   font-weight: 600;
-}
-
-.button {
+`;
+export const Button = styled.button`
   width: 100px;
   padding: 3px;
   margin: 5px 10px;
@@ -25,4 +26,4 @@
   border-radius: 4px;
   cursor: pointer;
   font-weight: 700;
-}
+`;

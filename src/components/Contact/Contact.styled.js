@@ -1,12 +1,13 @@
-.title {
+import styled from 'styled-components';
+
+export const Label = styled.label`
   display: block;
   margin-bottom: 5px;
   font-size: 20px;
   color: #000;
   text-align: center;
-}
-
-.input {
+`;
+export const Input = styled.input`
   text-align: center;
   display: block;
   width: 200px;
@@ -16,9 +17,9 @@
   color: #000;
   outline-color: none;
   border-radius: 10px;
-}
+`;
 
-.button {
+export const Button = styled.button`
   display: block;
   margin: 0 auto;
 
@@ -31,4 +32,4 @@
   text-transform: uppercase;
 
   border-radius: 10px;
-}
+`;
